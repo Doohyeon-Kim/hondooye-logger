@@ -5,7 +5,7 @@ import 'package:logger/logger.dart';
 class LoggerUtil {
   LoggerUtil._();
 
-  static createLogger(String emoji, dynamic message, {int? methodCount}) {
+  static void createLogger(String emoji, dynamic message, {int? methodCount}) {
     message = message.toString();
     List<String> buffer = [];
     for (String messageLine in message.split('\n')) {
